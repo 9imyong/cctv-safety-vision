@@ -1,0 +1,38 @@
+# ---- Web / API ----
+fastapi
+uvicorn
+gunicorn
+starlette
+jinja2
+pydantic
+httpx
+requests
+aiofiles
+python-dotenv==0.20.0
+fastapi-utils
+typing_inspect        # fastapi-utils 의존
+
+# ---- Task queue ----
+celery[redis]
+redis
+gevent                # Celery worker pool (채널당 장기 실행 태스크에 적합)
+
+# ---- Database ----
+pymysql
+DBUtils               # PooledDB
+
+# ---- Vision / Inference ----
+numpy>=1.14.3
+opencv-python
+torch
+torchvision
+Pillow
+ensemble-boxes        # weighted_boxes_fusion
+
+# ---- GStreamer 바인딩 ----
+pycairo>=1.18.2
+PyGObject
+
+# ---- pip 로 설치되지 않는 의존성 (ATTRIBUTION.md 참고) ----
+# mmdeploy_runtime : TensorRT 엔진 로더. MMDeploy 빌드 산출물을 직접 설치
+# pygst-utils      : https://github.com/jackersson/pygst-utils

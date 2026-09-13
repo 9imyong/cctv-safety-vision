@@ -1,0 +1,18 @@
+# 로컬 검증용 설정 예시. 실제 운영 CCTV 목록은 DB에서 조회하며 이 파일을 쓰지 않는다.
+# 실 자격증명이 들어가는 config.yaml 은 .gitignore 대상이다.
+SERVER:
+  PERSON: http://127.0.0.1:8080/predictions/person
+  HOLE:   http://127.0.0.1:8080/predictions/hole
+  NORMAL: http://127.0.0.1:8080/predictions/normal
+
+CCTV:
+  1:
+    CCTV_NO: 1
+    NAME: CCTV 1
+    VIDEO_SRC: ./samples/sample_01.mp4   # 또는 rtsp://<host>:<port>/<path>
+    PURPOSE_FPS: 5
+  2:
+    CCTV_NO: 2
+    NAME: CCTV 2
+    VIDEO_SRC: ./samples/sample_02.mp4
+    PURPOSE_FPS: 5

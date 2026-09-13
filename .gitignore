@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 환경변수 / 자격증명 — 절대 커밋 금지
+.env
+.env.*
+!.env.example
+config/config.yaml
+
+# 런타임 산출물
+*.log
+celery_logs.txt
+celerybeat-schedule*
+/data/
+playlist/
+*.ts
+*.m3u8
+*.mp4
+*.jpg
+
+# 모델 가중치 / TensorRT 엔진
+*.engine
+*.onnx
+*.pth
+tensorrt/
